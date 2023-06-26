@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+import FooterSection from './components/structures/FooterSection';
+import HeaderSection from './components/structures/HeaderSection';
+import Card from './components/common/Card';
+import Hero from './components/structures/HeroSection';
+import Statement from './components/structures/Statment';
+import Menu from './components/structures/MenuSection';
+import EventSection from './components/structures/EventSection';
+import ContactSection from './components/structures/ContactSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="card_container">
+
+
+      <div className='bgimge'>
+        <div className='bg-forground'>
+          <HeaderSection />
+          <Hero />
+        </div>  </div>
+      <Statement />
+      <div> <Menu /></div>
+      <EventSection />
+      <div className='both-bg'>
+        <div className='overlay-three'>
+          <ContactSection />
+        </div>
+      </div>
+      <FooterSection />
+
+
     </div>
   );
 }
