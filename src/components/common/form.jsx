@@ -1,6 +1,4 @@
-import ContactSection from "../structures/ContactSection"
-import AllHeader from "./allheader"
-import { useContext, useEffect, useState } from "react"
+
 import UseInput from "./inputVlidate"
 
 
@@ -35,21 +33,21 @@ const ContactForm = () => {
         formValid = true
     }
     const submiter = (e) => {
-        e.PreventDefault()
+        e.preventDefault()
         if (!enterdnameisvalid) {
-            return
+            return;
         }
     
         // const reseting=(e)=>{
-       e. resetName();
-       e. resetEmail();
-       e. resetPhoneNumber();
+     resetName();
+       resetEmail();
+        resetPhoneNumber();
     }
 
     
     const nameclss = nameError ? 'invalid' : 'name'
-    const emailclss = emailError && ' invalid'
-    const numberclss= numberError && 'invalid'
+    const emailclss = emailError ? ' invalid':''
+    const numberclss= numberError ? 'invalid':''
 
     return (
         <div className="center contact-continer">
@@ -83,7 +81,7 @@ const ContactForm = () => {
                             onChange={PhonenumberChanger}
                             onBlur={PhonenumberBlur}
                         // value={enterdvalue}
-                        /></div> {emailError && (<p style={{ color: 'red' }}>please enter phone number</p>)}
+                        /></div> {numberError && (<p style={{ color: 'red' }}>please enter phone number</p>)}
 
                         <label htmlFor="email" className="firstName">E- mail :</label>
                         <div className={emailclss}>
@@ -106,7 +104,7 @@ const ContactForm = () => {
                             className="message"
                             name="message"
                         />
-                        {enterdnameisvalid  + 'g'}
+                        {/* {enterdnameisvalid  + 'g'} */}
                         <button disabled={!formValid} className="send">Send</button>
 
                     </form>

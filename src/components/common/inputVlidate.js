@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const UseInput = (validation) => {
     const [enteredValue, SetenteredValue] = useState('');
     const [touched, setTouched] = useState(false)
-    // const valueIsVaalid = validation(enteredValue)
-    const [valueIsVaalid, setvalueIsVaalid] = useState(validation(enteredValue))
-    const hasError = !valueIsVaalid && touched;
+    const [valueIsVaalid, setvalueIsVaalid] = useState(false)
+
+    useEffect(() => {
+        setvalueIsVaalid(validation(enteredValue));
+      }, [enteredValue, validation]);
+
+      const hasError = !valueIsVaalid && touched;
 
     const inputValue = (event) => {
         SetenteredValue(event.target.value)
@@ -15,12 +19,15 @@ const UseInput = (validation) => {
     console.log(validation)
     console.log(validation(enteredValue))
     console.log(';;;');
+
+
     const inputBlur = () => {
         setTouched(true)
     }
     const reset = () => {
         SetenteredValue('')
         setTouched(false)
+        setvalueIsVaalid(false)
     }
     return {
         value: enteredValue,

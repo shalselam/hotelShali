@@ -7,9 +7,10 @@ const ContactSection  = () => {
        < div id="contact" className="contact-continer "> 
    
             <ContactForm />
-            <div style={{color:'white', marginTop:'80px'}}>
+            <div style={{color:'white', marginTop:'80px',}}>
               <AllHeader />
             </div>
+            <hr/>
         </div>  )
 
 }

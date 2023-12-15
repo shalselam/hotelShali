@@ -258,7 +258,7 @@ const Menu = (props) => {
     return (
         <div id="menu" className="center bgimage ">
             <div className="overlay-two center flex-grow">
-                <div className="flex-grow max-width " style={{ flexDirection: 'column', color: 'white' }}>
+                <div className="flex-grow max-width bgColor " style={{ flexDirection: 'column', color: 'white' }}>
                     <div className="max-width menu-list">
                         <h1 style={{ fontSize: '3rem' }}>Menu'2023</h1>
                         <div className="menu-type ">  <div className="dropdown">

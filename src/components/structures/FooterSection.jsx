@@ -4,7 +4,7 @@ const FooterSection = () => {
         <div className="center">
             <div className=" footers">
                 <div className="flex-grow"  >
-                    <div className=" footer-container" style={{ maxWidth: '1300 !important' }}>
+                    <div className=" footer-container" style={{ maxWidth: '1300 !important', marginBottom:'80px' }}>
                         <div className="footer-link">
                             <a href="#home">Home</a>
                             <a href="#menu">Menu</a>

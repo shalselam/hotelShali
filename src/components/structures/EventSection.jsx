@@ -5,26 +5,26 @@ const EventSection = () => {
     const imageList = [
         {
             image1: require('../../images/wedding.png'),
-            title: "concert",
-            date: "20.05.2023 saturday",
+            title: "Wedding concert",
+            date: "10.05.2023 saturday",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis iste fugiat"
         },
         {
             image1: require('../../images/kitfo.jpg'),
-            title: "concert",
+            title: "Food Evenet",
             date: "20.05.2023 saturday",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis iste fugiat"
         },
         {
             image1: require('../../images/Nafkot-Addis-Events.jpg'),
-            title: "concert",
-            date: "20.05.2023 saturday",
+            title: "Music concert",
+            date: "30.05.2023 saturday",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis iste fugiat"
         },
         {
             image1: require('../../images/birthday.png'),
-            title: "concert",
-            date: "20.05.2023 saturday",
+            title: " Birth Day Event",
+            date: "04.06.2023 saturday",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis iste fugiat"
         },
     ]
